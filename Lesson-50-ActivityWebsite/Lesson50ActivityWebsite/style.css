@@ -73,5 +73,21 @@ nav a:hover{
   
 }
 #output{
-
+  display:flex;
+  flex-wrap:wrap;
+  align-items: center;
+}
+.card{
+  flex: 1;
+  margin: 5px;
+  padding: 5px; 
+  border: 1px solid gray;
+  text-align: center;
+}
+h3{
+  color: red;
+}
+.card p{
+  color: green;
+  font-style: italic;
 }
