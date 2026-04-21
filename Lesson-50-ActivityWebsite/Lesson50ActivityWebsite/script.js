@@ -1,11 +1,12 @@
 let data;
 
 async function init() {
-    let link = "http://localhost:5500";
+    let link = "https://sturdy-journey-6959r4r7xv4jf5v5g-8501.app.github.dev";
     let route = "/tracks";
     let info = await fetch(link + route);
     data = await info.json();
     console.log(data);
+    GenerateCards(data);
 }
 
 function GenerateCards(tracks){
@@ -25,3 +26,4 @@ function GenerateCards(tracks){
     }
     output.innerHTML = build;
 }
+
